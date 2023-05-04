@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/* TopNav */
+
+.topNav {
+    height: 72px;
+    width: 100%;
+    background-color: #3B245A;
+}
+
+.navBar {
+    height: 72px;
+    width: 100%;
+}
+
+.navLogo {
+    Height: 72px;
+    padding-top: 16px;
+    padding-left: 24px;
+}
+
+.navLinks {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.navLink {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 0px;
+    position: absolute;
+    height: 72px;
+    top: 0px;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: 580;
+    font-size: 20px;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.navLink:active {
+    color: #c0bebe;
+    border-bottom: 4px solid #c0bebe;
+    transition: 0.2s;
+}
+
+.navLink_login {
+    color: #FFFFFF;
+    position: relative;
+    top: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: 580;
+    font-size: 20px;
+}
+
+.navLink_login:hover {
+    color: #d6d5d5;
+    transition: 0.3s;
+}
+
+.navLink_login:active {
+    color: #a5a2a2;
+    transition: 0.3s;
+}
+
+.navProfile {
+    padding-top: 15px;
+}
+
+.align-right {
+    width: 45%;
+    float: right;
+}
+
+.btn {
+    --bs-btn-padding-x: 0rem !important;
+    --bs-btn-padding-y: 0rem !important;
+}
+
+.btn-success {
+    --bs-btn-color: transparent !important;
+    --bs-btn-bg: transparent !important;
+    --bs-btn-border-color: transparent !important;
+    --bs-btn-hover-color: transparent !important;
+    --bs-btn-hover-bg: transparent !important;
+    --bs-btn-hover-border-color: transparent !important;
+    --bs-btn-active-color: transparent !important;
+    --bs-btn-active-bg: transparent !important;
+    --bs-btn-active-border-color: transparent !important;
+    --bs-btn-border-width: 0px;
+}
+
+.navProfile-img {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+
+.navProfile-username {
+    width: 100%;
+    color: #ffffff;
+    font-size: 19px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.dropdownIcon {
+    position: relative;
+    bottom: 2px;
+    height: 35px;
+    width: 35px;
+    right: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .align-right {
+        width: 100%;
+        float: right;
+        position: relative;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .align-right {
+        width: 90%;
+        float: right;
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .align-right {
+        width: 100%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .align-right {
+        width: 110%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .align-right {
+        width: 110%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .align-right {
+        width: 55%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .align-right {
+        width: 60%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .align-right {
+        width: 70%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .align-right {
+        width: 100%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .align-right {
+        width: 110%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .align-right {
+        width: 120%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .align-right {
+        width: 130%;
+        float: right;
+    }
+}
+
+.navBack {
+    box-sizing: border-box;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    font-family: 'Inter';
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 0px;
+    position: absolute;
+    height: 72px;
+    top: 0px;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.editInput{
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #4F3A6A;
+    color: #ffffff;
+}
+
+.editInput-container {
+    height: 35px;
+    padding: 7px 5px;
+}
+
+.editInput-container:hover {
+    cursor: pointer;
+    background-color: #4F3A6A;
+    border-radius: 10px;
+}
+
+.tick-icon {
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tick-icon:hover {
+    color: #cbcbcb;
+    transition: 0.3s;
+}
+
+.navBtn {
+    width: 50%;
+    float: right;
+}
+
+.btn-save {
+    gap: 8px;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    outline: none;
+    position: relative;
+    top: 15px;
+    background: #813458;
+    border: 2px solid #571d38;
+    border-radius: 5px;
+    float: right;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 14px;
+}
