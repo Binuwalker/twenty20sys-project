@@ -114,7 +114,7 @@ function Comparision() {
                         }
                         if (csvSourceData[i].assignments[j].grossPay !== csvTargetData[i].assignments[j].grossPay) {
                             console.log(`Assignment grosspay does not match for row ${i}, assignment ${j}`);
-                            newRowClasses[i] = "red-Color"
+                            newRowClasses[i] = "red-Color r"
                         }
                         // Add more property comparisons as needed
                     }
