@@ -224,6 +224,10 @@
     background: #ffebeb !important;
 }
 
+.css-k9177t-MuiTableCell-root {
+    border-bottom: none !important;
+}
+
 .red-Color-employee {
     background: #ffebeb;
 }
@@ -238,7 +242,8 @@
     border-left: 4px solid #ffebeb;
     background: rgba(255, 0, 0, 0.08) !important;
 }
-.green-Color{
+
+.green-Color {
     border-left: 4px solid #27AE60;
     background: #eef9f3;
 }

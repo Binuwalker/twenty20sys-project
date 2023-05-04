@@ -72,11 +72,10 @@ function ConcileTable({ csvValues, csvTargetValues, onUpdateCsvValues }) {
                         newRowClasses[i] = "red-Color-employee red-stripe"; // Set row class for employee row
                         newRowSticky[i] = "red-color-sticky"
                         setClassSticky(newRowSticky);
-                    } else 
+                    }
                 }
             }
             setClas(newRowClasses);
-            console.log(clas);
         } else {
             console.log("The number of rows in the two files is different");
         }
