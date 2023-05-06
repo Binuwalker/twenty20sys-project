@@ -5,7 +5,7 @@ import ConcileTable from './ConcileTable';
 import Papa from "papaparse";
 import { Snackbar } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
-import {RxCross2} from 'react-icons/rx';
+import { RxCross2 } from 'react-icons/rx';
 
 
 
@@ -31,7 +31,9 @@ function Comparision() {
             complete: function (results) {
                 const csvDataValues = []
                 results.data.map(data => (
-                    csvDataValues.push((data))
+                    <div key={data.id}>
+                    {csvDataValues.push((data))}
+                    </div>
                 ))
                 const groupedData = csvDataValues.reduce((acc, curr) => {
                     const { employeeName, ...rest } = curr;
@@ -72,7 +74,9 @@ function Comparision() {
             complete: function (results) {
                 const csvTargetValues = []
                 results.data.map(data => (
-                    csvTargetValues.push((data))
+                    <div key={data.id}>
+                        {csvTargetValues.push((data))}
+                    </div>
                 ))
                 const groupedTargetData = csvTargetValues.reduce((acc, curr) => {
                     const { employeeName, ...rest } = curr;
@@ -93,38 +97,6 @@ function Comparision() {
     const handleClose = () => {
         setOpen(false);
     };
-
-
-    const compareCsvData = () => {
-        const newRowClasses = [];
-        if (csvSourceData?.length === csvTargetData?.length) {
-            for (let i = 0; i < csvSourceData?.length; i++) {
-                if (csvSourceData[i].employeeName !== csvTargetData[i].employeeName) {
-                    console.log(`Employee name does not match for row ${i}`);
-                    newRowClasses[i] = "red-Color"
-                }
-                if (csvSourceData[i].assignments.length !== csvTargetData[i].assignments.length) {
-                    console.log(`Number of assignments does not match for row ${i}`);
-                    newRowClasses[i] = "red-Color"
-                } else {
-                    for (let j = 0; j < csvSourceData[i].assignments.length; j++) {
-                        if (csvSourceData[i].assignments[j].name !== csvTargetData[i].assignments[j].name) {
-                            console.log(`Assignment name does not match for row ${i}, assignment ${j}`);
-                            newRowClasses[i] = "red-Color"
-                        }
-                        if (csvSourceData[i].assignments[j].grossPay !== csvTargetData[i].assignments[j].grossPay) {
-                            console.log(`Assignment grosspay does not match for row ${i}, assignment ${j}`);
-                            newRowClasses[i] = "red-Color"
-                        }
-                        // Add more property comparisons as needed
-                    }
-                }
-            }
-            setClasss(newRowClasses)
-        } else {
-            console.log("The number of rows in the two files is different");
-        }
-    }
 
     const [showReconcile, setShowReconcile] = useState((reconcileSourceUploaded && reconcileTargetUploaded) ? true : false);
     return (

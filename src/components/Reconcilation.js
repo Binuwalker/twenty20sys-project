@@ -75,8 +75,8 @@ function Reconcilation() {
                         </div>
                         <div className='col-lg-6 col-md-6 col-sm-6 float-end col-6 button-div'>
                             <button className=' btn btn-primary button-new' onClick={handleClick}>
-                                <AiOutlinePlus style={{ fontSize: "20px" }} />
-                                New
+                                <AiOutlinePlus style={{ fontSize: "24px", fontWeight: 'bolder', position: "relative", bottom: "1px", paddingRight: "3px" }} />
+                                <span style={{fontSize: "16px", paddingRight: "3px"}}>New</span>
                             </button>
                         </div>
                     </Row>
@@ -101,12 +101,9 @@ function Reconcilation() {
                                 </TableBody>
                             </Table>
                         </TableContainer>
-
                     </div>
                 </Container>
             )}
-
-
         </>
     )
 }

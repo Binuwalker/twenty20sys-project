@@ -30,6 +30,10 @@
     font-size: 14px !important;
 }
 
+.css-k9177t-MuiTableCell-root.MuiTableCell-head {
+    width: max-content !important;
+}
+
 .recon-table {
     margin-top: 26px;
     width: 98%;
@@ -220,7 +224,7 @@
     border-radius: 5px;
 }
 
-.red-color-sticky {
+.red-Color-sticky {
     background: #ffebeb !important;
 }
 

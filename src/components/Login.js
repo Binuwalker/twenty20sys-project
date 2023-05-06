@@ -34,7 +34,7 @@ const Login = () => {
             ) : (
                 <div className='formContainer'>
                     <div className='formWrapper'>
-                        <span className='logo'><img src='./img/icon.jpg' alt='icon'/></span>
+                        <span className='logo'><img src='./img/logo.png' alt='icon'/></span>
                         <span className='title'>Signin</span>
                         <form onSubmit={handleSubmit}>
                             <div className='inputContainer'>
