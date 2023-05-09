@@ -243,12 +243,10 @@
 }
 
 .red-Color {
-    border-left: 4px solid #ffebeb;
     background: rgba(255, 0, 0, 0.08) !important;
 }
 
 .green-Color {
-    border-left: 4px solid #27AE60;
     background: #eef9f3;
 }
 
@@ -410,4 +408,85 @@ input {
     .formWrapper {
         width: 100%;
     }
+}
+
+.explandedFeild_name {
+    font-family: 'Inter';
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.expandedFeild_date {
+    font-family: 'Inter';
+    color: rgba(0, 0, 0, 0.74);
+    font-weight: 600;
+}
+
+.btn-view {
+    height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 0;
+    padding-right: 3px;
+    padding-left: 3px;
+    gap: 2px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(3, 13, 27, 0.6)
+}
+
+.css-k22yp8-MuiTableCell-root.MuiTableCell-head {
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    /* identical to box height */
+
+    text-transform: uppercase !important;
+
+    color: #9298A4 !important;
+}
+
+.css-1u05cbg-MuiTableCell-root.MuiTableCell-body {
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: rgba(3, 13, 27, 0.6) !important;
+    height: 0 !important;
+}
+
+.red-Color-stripe {
+    position: relative;
+    right: 16px;
+    bottom: 0px;
+    height: 65px;
+    width: 3px;
+    background-color: #f00707;
+    float: left;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.green-Color-stripe {
+    position: relative;
+    right: 16px;
+    bottom: 0px;
+    height: 65px;
+    width: 3px;
+    background-color: #27AE60;
+    float: left;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.comparison_border_bottom {
+    border-bottom: 2px solid #EEEEEE;
 }
