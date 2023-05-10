@@ -315,7 +315,7 @@ function ConcileTable({ csvValues, csvTargetValues, onUpdateCsvValues }) {
                                                                                 newCsvValues[index].assignments[indexChildren].grossPay = newGrossPay; // Update the Gross Pay value in the copy
                                                                                 onUpdateCsvValues(newCsvValues);
                                                                                 setUpdatedRowIndex(indexChildren);
-                                                                                console.log("I: ", index, "|", "svins: ", newCsvValues[index], "wvidnv: ", csvTargetValues[index], "Index: ", indexChildren, "|", "Assignment Source Value: ", assign.grossPay, "|", "Assignment Target Value: ", csvTargetValues[index].assignments[indexChildren].grossPay, "|", "newGrossPay: ", newCsvValues[index].assignments[indexChildren].grossPay);
+                                                                                console.log("I: ", index, ",", "svins: ", newCsvValues[index], "wvidnv: ", csvTargetValues[index], "Index: ", indexChildren, "|", "Assignment Source Value: ", assign.grossPay, "|", "Assignment Target Value: ", csvTargetValues[index].assignments[indexChildren].grossPay, "|", "newGrossPay: ", newCsvValues[index].assignments[indexChildren].grossPay);
                                                                             }}
                                                                         >
                                                                             <AiOutlineCheck /> Fix
